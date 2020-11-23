@@ -15,7 +15,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: localhost:5000/myweb:1
+      - image: localhost:5000/jenkins/myweb:1
         imagePullPolicy: Always
         name: myweb
 

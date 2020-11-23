@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    registry = "localhost:5000/myweb"
+    registry = "localhost:5000/jenkins/myweb"
     dockerImage = ""
   }
 
