@@ -1,5 +1,12 @@
 pipeline {
+
+  environment {
+    registry = 'localhost:5000/jenkins/myweb'
+    dockerImage = ''
+  }
+
   agent any
+  
   stages {
     stage('Checkout Source') {
       steps {
@@ -37,8 +44,5 @@ pipeline {
     }
 
   }
-  environment {
-    registry = 'localhost:5000/jenkins/myweb'
-    dockerImage = ''
-  }
+
 }
